@@ -1,0 +1,104 @@
+#Contenedor_General {
+    display: flex; /* Habilita el uso de Flexbox */
+    justify-content: space-between; /* Mantiene el espaciado horizontal entre los divs */
+    align-items: stretch; /* Asegura que los hijos ocupen la misma altura */
+    height: 100vh; /* Asegura que el contenedor ocupe el 100% del alto de la ventana */
+    width: 80%;
+    padding: 40px; /* Añade un poco de espacio alrededor */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total del contenedor */
+}
+
+#Descripcion {
+    width: 95%; /* Ocupa el 95% del espacio disponible */
+    padding: 10px; /* Reduce el padding para ocupar menos espacio */
+    flex-direction: column; /* Coloca los hijos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+#Rewiewers {
+    width: 90%; /* Ocupa el 90% del espacio disponible */
+    flex-direction: column; /* Coloca los hijos en columna */
+    justify-content: space-between; /* Asegura que el espacio se distribuya entre los elementos */
+    height: 78%; /* Ajusta la altura automáticamente */
+    padding: 10px; /* Reduce el padding para ocupar menos espacio */
+    position: relative; /* Necesario para posicionar elementos hijos de forma absoluta */
+}
+
+#google, #meta {
+    position: absolute; /* Posiciona los divs de forma absoluta */
+    width: 52%; /* Ocupa el 52% del espacio disponible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    padding: 10px; /* Añade un poco de espacio interno para que la sombra se vea mejor */
+    border-radius: 10px; /* Redondea las esquinas */
+    background-color: #FAFAF9; /* Fondo blanco para resaltar la sombra */
+}
+
+#google {
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+}
+
+#meta {
+    bottom: 10px; /* Distancia desde la parte inferior */
+    left: 10px; /* Distancia desde la izquierda */
+}
+
+.testimonial-content {
+    display: flex; /* Habilita el uso de Flexbox para organizar el contenido */
+    align-items: center; /* Alinea las imágenes y estrellas verticalmente al centro */
+}
+
+.stars {
+    display: flex; /* Alinea las estrellas en una fila */
+    margin-left: 10px; /* Añade un margen a la izquierda para separar las estrellas de la imagen */
+}
+
+#google img, #meta img {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-width: 90px; /* Ajusta el tamaño máximo a 90px */
+}
+
+h1, #info, .user, .description, li, p {
+    font-family: Sora, Helvetica, sans-serif; /* Agrupando la propiedad de fuente */
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin-top: 10px; /* Añade un margen superior para espaciarlo de la imagen */
+}
+
+#info {
+    font-size: 1.25rem;
+    color: #52525A;
+}
+
+.user {
+    font-size: 1rem;
+    font-weight: 600; /* Negrita para el usuario */
+}
+
+.description {
+    font-size: 1rem;
+    color: #52525A;
+}
+
+li {
+    font-size: 0.875rem;
+    color: #52525A;
+}
+
+p {
+    margin-bottom: 10px; /* Espacio inferior entre párrafos */
+    line-height: 1.5; /* Ajusta el espacio entre líneas de texto */
+}
+
+.custom-list {
+    list-style-image: url('Done_ring_round_fill.svg');
+    padding-left: 28px; /* Asegura que la imagen se vea bien */
+}
+
+.custom-list li {
+    margin-bottom: 10px; /* Añade algo de espacio entre los elementos de la lista */
+    padding-top: 5px;
+}
